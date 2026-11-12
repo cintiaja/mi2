@@ -2,8 +2,30 @@
 <html>
     <head>
         <title>SERVICIOS</title>
-         <link rel="stylesheet" href="Styless.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Styless.css">
     </head>
+    <header class="barra">
+
+        <button class = "menu-boton" aria-label="abrir menu">☰</button>
+
+        <nav id = "manu">
+            <a href="index.html">HOME</a>
+            <a href="sobremi.html">SOBRE MI</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+        <script>
+        const boton = document.querySelector(".menu-boton");
+        const menu = document.getElementById("menu");
+
+        boton.addEventListener("click",() =>{
+            menu.classList.toggle("abierto");
+        });
+    </script>
     <h1 class = "titulo">SERVICIOS</h1>
     <div class = "ventana2">
         <h3>Diseño de Interfaces</h3>
@@ -28,10 +50,6 @@
     <br>
     <br>
     <body>
-        <nav class = "mi-menu">
-            <a href="index.html" class = "boton-app">
-                <span class = "texto">INICIO</span>
-            </a>
             <section class="app">
                 <a href="https://www.instagram.com/cintia_mp3?exln=enhzazgyaTZ4YXNr" class = "app1">
                     <img src="imagenes/insta.jpeg" alt = "instagram">

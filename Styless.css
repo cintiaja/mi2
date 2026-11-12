@@ -36,6 +36,9 @@ footer{
     padding: 15px 20px;
 }
 }
+
+
+
 img{
     max-width: 100%;
     height: auto;
@@ -155,3 +158,46 @@ h4{
         margin-top: 20px;
         margin:auto;
     }
+    .barra{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        min-height: 60px;
+        padding: 0 20px;
+        background-color: var(--caja-color);
+        border-bottom: 2px solid var(--azul);
+        position: sticky;
+        top: 0;
+        z-index: 10;
+
+    }
+    .logo {
+  color: var(--azul);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* En compu el ☰ no se ve */
+.menu-boton {
+  display: none;
+  background: none;
+  border: none;
+  color: var(--morado);
+  font-size: 34px;
+  cursor: pointer;
+}
+
+/* Menú normal: enlaces en fila */
+nav {
+  display: flex;
+}
+
+nav a {
+  margin-left: 25px;
+  text-decoration: none;
+  color: var(--texto);
+}
+
+nav a:hover {
+  color: var(--verde);
+}

@@ -2,13 +2,34 @@
 <html>
     <head>
         <title>CONTACTO</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Rajdhani:wght@400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="Styless.css">
     </head>
+    <header class="barra">
+
+        <button class = "menu-boton" aria-label="abrir menu">☰</button>
+
+        <nav id = "manu">
+            <a href="index.html">HOME</a>
+            <a href="sobremi.html">SOBRE MI</a>
+            <a href="servicios.html">SERVICIOS</a>
+            <a href="contacto.html">CONTACTO</a>
+        </nav>
+    </header>
+    <script>
+        const boton = document.querySelector(".menu-boton");
+        const menu = document.getElementById("menu");
+
+        boton.addEventListener("click",() =>{
+            menu.classList.toggle("abierto");
+        });
+    </script>
 
     <body>
         <dialog open>
             <h2>CONTACTO</h2>
-            <p>Si deseas contactarme, puedes hacerlo a través de los siguientes medios:</p>
             <ul>
 
         <section class = "app">
