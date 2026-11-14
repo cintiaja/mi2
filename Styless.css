@@ -152,11 +152,12 @@ h4{
         justify-content: center;
     }
     .app1{
-        display: flex;
+        display: block;
         height: 40px;
         width: 40px;
         margin-top: 20px;
-        margin:auto;
+        margin:0 auto 25px;
+        columns:auto;
     }
     .barra{
         display: flex;
@@ -171,11 +172,6 @@ h4{
         z-index: 10;
 
     }
-    .logo {
-  color: var(--azul);
-  text-decoration: none;
-  font-weight: bold;
-}
 
 /* En compu el ☰ no se ve */
 .menu-boton {
@@ -217,4 +213,57 @@ nav a:hover {
   padding: 12px;
   font-size: 16px;
   border-radius: 6px;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between; 
+  align-items:end;
+  min-height: 60px;
+  padding: 0 20px;
+  background-color: var(--caja);
+  border-bottom: 2px solid var(--azul);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+
+
+.menu-boton {
+  display: block;
+  background: none;
+  border: none;
+  color: var(--morado);
+  font-size: 34px;
+  cursor: pointer;
+}
+
+
+nav {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  flex-direction: column;
+  background-color: #31022957;
+  border-bottom: 2px solid var(--azul);
+}
+
+nav.abierto {
+  display: flex;
+}
+
+nav a {
+  margin: 0;
+  padding: 14px;
+  text-align: center;
+  text-decoration: none;
+  color: var(--texto);
+  border-top: 1px solid var(--azul);
+}
+
+nav a:hover {
+  color: var(--verde);
 }
