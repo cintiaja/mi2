@@ -201,3 +201,20 @@ nav a {
 nav a:hover {
   color: var(--verde);
 }
+.formulario {
+  display: flex;
+  flex-direction: column;      
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: var(--caja);
+  border: 2px solid var(--rosa);
+}
+
+.formulario input,
+.formulario textarea {
+  margin-top: 6px;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+}
